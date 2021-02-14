@@ -6,6 +6,12 @@ html{
 *::before{
     box-sizing: inherit;
 }
+html, 
+body{
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
 a{
     display: inline-block;
     text-decoration: none;
@@ -28,4 +34,22 @@ body{
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1200px;
+}
+.container-fluid{
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 100%;
+}
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+    }
+}
+.title{
+    color: $bg;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
 }
